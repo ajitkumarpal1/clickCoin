@@ -1,0 +1,46 @@
+/* Radial gradient to simulate gold texture */
+.gold-coin {
+  background: radial-gradient(circle at 50% 50%, #f4d03f, #d4ac0d);
+}
+
+/* Shiny highlight effect */
+.gold-coin:before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  filter: blur(5px);
+  z-index: 1;
+}
+
+/* Coin edge styling */
+.coin-edge {
+  background: linear-gradient(180deg, #c39b26, #8e6d1f);
+  transform: translateZ(-20px);
+  /* Pushes the edge behind the front face */
+}
+
+/* Back face of the coin */
+.coin-back {
+  background: radial-gradient(circle at 50% 50%, #d4ac0d, #c39b26);
+  transform: rotateY(180deg);
+  /* Flip the back face */
+}
+
+/* Container for 3D rotation */
+.coin-3d {
+  transform-style: preserve-3d;
+  /* Preserve 3D space for the coin faces */
+  perspective: 1000px;
+  /* Add perspective to enhance depth */
+  transform: rotate3d(-1, 1, -1, -45deg);
+}
+
+.bent-text {
+  display: inline-block;
+  transform: skewY(-10deg); /* Adjust the skew angle as needed */
+}

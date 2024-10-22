@@ -1,0 +1,12 @@
+.goldShedo {
+    top: 47%;
+    left: -16%;
+    background: linear-gradient(105deg, #fbba40 3.21%, #fbe3b059 91.45%);
+    background-size: cover;
+    width: 100%;
+    height: 166px;
+    border-radius: 50%;
+    transform: rotate(25deg);
+    filter: blur(40px);
+    position: absolute;
+}
