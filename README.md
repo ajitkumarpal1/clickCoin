@@ -1,3 +1,21 @@
+# TapMe Telegram Mini App
+
+## Setup Instructions
+
+Follow the steps below to set up the TapMe Telegram Mini App locally.
+
+1. **Install Node Modules:**  
+   Run the following command to install the necessary node modules:  
+   **`npm install`**
+
+2. **Configure the Backend GraphQL Server Locally:**  
+   Change the Apollo Client URL in `src/Apollo/client.ts` to point to your local GraphQL server.
+
+3. **Run the React Project:**  
+   Start the React project with the following command:  
+   **`npm run dev`**
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
