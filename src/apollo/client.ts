@@ -2,7 +2,7 @@
 import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client';
 
 const client = new ApolloClient({
-  uri: "http://localhost:3000/graphql",  // Define the GraphQL server URL in .env
+  uri: "https://clickcoinbe.onrender.com/graphql",//'http://localhost:2999/graphql',  // Define the GraphQL server URL in .env
   cache: new InMemoryCache(),
 });
 
